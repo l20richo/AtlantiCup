@@ -1,0 +1,121 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="With=device-width, initial-scale=1.0">
+    <title>AtlantiCup Website</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+
+
+<body>
+    <section class="c_header">
+        <nav>
+            
+            <a href:="index.html"><img src ="images/logo3.png"></a>
+            <div class="nav-links" id="navLinks" >
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a> </li>
+                    
+                    
+                    <li><a href="page3.html">CHARTE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"" ></i>
+        </nav>
+
+    </section >
+
+    <section class="transition"> <p></p></section>
+
+    <section class="c_titre">
+        <h1>Contactez-nous</h1>
+    </section>
+
+
+
+    <section class="c_location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2651.120586920576!2d-4.5725660841622995!3d48.35820647924161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4816be39dac601ad%3A0x271a5b153615b2ad!2sIMT%20Atlantique!5e0!3m2!1sfr!2sfr!4v1633531271683!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+
+    <section class="c_contact-us">
+        
+            <div class="c_contact-us">
+                <a href="https://www.facebook.com/AtlantiCup2021"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <span>
+                    <a href="https://www.facebook.com/AtlantiCup2021"><h5>Facebook</h5>
+                    
+                    
+                
+
+                <p>Nous contacter</p>
+            </a>
+                </span>
+
+            
+        </div>
+
+
+   
+    </section>
+
+
+
+
+
+<!--
+
+    <section class="c_contact-us">
+
+        <div class="c_row">
+            
+           
+            <div class="c_contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Entrez votre nom" required>
+                    <input type="email" name="email" placeholder="Entrez votre adresse mail" required>
+                    <input type="text" name="subject" placeholder="Entrez votre sujet" required>
+                    <textarea row="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn red-btn" >Envoyez votre message</button>
+                </form>
+            </div>            
+        </div>
+
+    </section>
+
+
+-->
+<style>
+    @media(max-width:1000px){
+        .nav-links{
+        
+        height: 20vh;
+        }
+ </style>
+
+<!-----JavaScript for Menu----->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+        navLinks.style.visibility = "visible";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+<script src="app.js"></script>
+</body>
+</html>

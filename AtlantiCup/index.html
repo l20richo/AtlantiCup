@@ -1,0 +1,416 @@
+
+
+
+<!-----
+    https://www.creativejuiz.fr/blog/tutoriels/creer-menu-sticky-avec-javascript-css
+    
+    git add . 
+    git commit -m "push"  
+    git push heroku master
+    
+    ----->
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="With=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>AtlantiCup Website</title>
+    <link rel="stylesheet" href="style1.css"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  
+ 
+ 
+
+<body>
+    <header class="header">
+        <nav>
+            
+            <a href:="index.html"><img src ="images/logo3.png"></a>
+            <div class="nav-links" id="navLinks" >
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul id="menu">
+                    <li><a href="index.html">ACCUEIL</a> </li>
+                    
+                    <li><a href="#id_description">EVENEMENT</a> </li>
+                    <li><a href="#id_sport">SPORT</a> </li>
+                    <li><a href="#id_soiree">SOIREE</a> </li>
+                    <li><a href="#id_logement">LOGEMENT&REPAS</a> </li>
+                    <li><a href="#id_partenaire">PARTENAIRE</a> </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="page3.html"">CHARTE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"" ></i>
+        </nav>
+    <div class="text-box">
+
+        <h1 class="title">
+            <div class="span-containeer s1">
+                <span> <em>Atlanti</em>CUP</span>
+            </div>
+            <div class="span-containeer s2">
+                <span>AtlantiCUP</span>
+            </div>
+            
+        </h1>
+        
+        <p>Deuxième édition, le 20 & 21 Novembre 2021</p>
+        
+    </div>    
+
+    </header>
+
+
+<!-----Description----->
+
+<!---
+<section class="description" id = "id_description">
+
+    <img src="affiche_atlanticup_v3.png" alt="affiche">
+    
+    <h1>Informations Générales</h1>
+    
+    
+    <h2>Présentation </h2>
+    <p>L’Atlanticup est une compétition sportive entre plusieurs écoles 
+        bretonnes organisée par IMT Atlantique campus de Brest sur son 
+        campus (655 avenue du Technopôle 29280) et ses alentours. Cette 
+        2ème édition de l’événement aura lieu les 20 et 21 novembre 2021. 
+        Plusieurs sports sont proposés (plus de détails dans la partie II) et 
+        les 3 premières équipes de chacun d’eux recevront des médailles de bronze, 
+        d’argent et or ainsi qu’une coupe pour les vainqueurs. 
+    </p>
+    <br>
+    <p>En plus du tournoi sportif, une soirée sera organisée dans la nuit du 20 au 21 novembre pour
+         tous les participants. Des salles seront réservées afin que les différentes équipes puissent y dormir et des 
+         repas seront disponibles au Restaurant Associatif de Kernevan.
+    </p>
+    <br>
+    
+
+    <p>
+        Le prix de l’inscription n’est pas encore finalisé mais il sera inférieur à 30€ par personne tout en sachant que ce prix comprend 
+        les repas, les dortoirs durant la nuit du 20 au 21 , l’accès à la soirée, un t-shirt et une gourde Atlanticup.
+    </p>
+   
+
+    
+
+    <p>L’accueil des écoles le samedi débutera à 8h et la remise des trophées commencera le dimanche à 16h. L’événement devrait donc se terminer aux alentours 
+        de 17h le dimanche.</p>    
+       
+
+    <div class="ecoles">
+    <h2>Écoles Participantes</h2>  
+    
+    <br>
+    
+    <ul>
+        <li>IMT Atlantique</li>
+        <li>Brest Buisness School</li>
+        <li>Centrale Nantes</li>
+        <li>ENIB</li>
+        <li>ENSSAT Lannion</li>
+        <li>ENSTA Bretagne</li>
+        <li>ISEN</li>
+    </ul>
+  
+
+
+<p>
+IMT Atlantique - Brest Buisness School - Centrale Nantes - ENIB -- ENSSAT Lannion - ENSTA Bretagne - ISEN
+</p>
+
+
+
+</section>
+
+<p class='flotte' >
+    
+    </p>
+
+<section class="transition"> <p></p></section>
+
+--->
+
+    <section class="description" id = "id_description">
+
+        <div class="row">
+            <div class="des-col">
+    <h1>Informations Générales</h1>
+    
+    
+    <h2>Présentation </h2>
+    <p>L’Atlanticup est une compétition sportive entre plusieurs écoles 
+        bretonnes organisée par IMT Atlantique campus de Brest sur son 
+        campus (655 avenue du Technopôle 29280) et ses alentours. Cette 
+        2ème édition de l’événement aura lieu les 20 et 21 novembre 2021. 
+        Plusieurs sports sont proposés et 
+        les 3 premières équipes de chacun d’eux recevront des médailles de bronze, 
+        d’argent et or ainsi qu’une coupe pour les vainqueurs. 
+    </p>
+    <br>
+    <p>En plus du tournoi sportif, une soirée sera organisée dans la nuit du 20 au 21 novembre pour
+         tous les participants. Des salles seront réservées afin que les différentes équipes puissent y dormir et des 
+         repas seront disponibles au Restaurant Associatif de Kernevan.
+    </p>
+    <br>
+    
+
+    <p>
+        Le prix de l’inscription est de 26€ par personne tout en sachant que ce prix comprend 
+        les repas, les dortoirs durant la nuit du 20 au 21 , l’accès à la soirée, un t-shirt, une gourde Atlanticup,un ecocup et une conso gratuite.
+    </p>
+   
+
+    
+
+    <p>L’accueil des écoles le samedi débutera à 8h et la remise des trophées commencera le dimanche à 17h. L’événement devrait donc se terminer aux alentours 
+        de 18h le dimanche.</p>    
+       
+
+    
+</div>
+<div class="des-col">
+    <img src="affiche_logo_jaune.png" alt="affiche">
+</div>
+
+
+</div>
+<div class="ecoles">
+    <h2>Écoles Participantes</h2>  
+    
+    <br>
+    <ul>
+        <li>IMT Atlantique</li>
+        <li>Centrale Nantes</li>
+        <li>ENIB</li>
+        <li>ENSSAT Lannion</li>
+        <li>ENSTA Bretagne</li>
+        
+    </ul>
+    </div>
+</section>
+
+<p class='flotte' >
+    
+    </p>
+
+<section class="transition"> <p></p></section>
+
+
+
+<!-----Sports----->
+<section class="sport" id = "id_sport">
+    <h1>Sports</h1>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/football.png">
+            <div class="layer">
+                <ul>
+                    <li style="font-size: 25px;padding-bottom:10px;">FOOTBALL (mixte)</li>
+                    <li>7 joueurs + 1 remplaçant(e)</li>
+                    <li>Terrain de Plouzané</li>
+                    <li>Min. 2 filles</li>
+
+                </ul>
+                
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/handball.png">
+            <div class="layer">
+                <ul>
+                    <li style="font-size: 25px;padding-bottom:10px;">HANDBALL (H&F)</li>
+                    <li>7 joueur(se)s + 1 remplaçant(e)</li>
+                    <li>Gymnase de Plouzané</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/volleyball.png">
+            <div class="layer">
+                <ul>
+                    <li style="font-size: 25px;padding-bottom:10px;">VOLLEY (mixte)</li>
+                    <li>6 joueurs + 1 remplaçant(e)</li>
+                    <li>Grand gymnase</li>
+                    <li>Min. 2 filles</li>
+                </ul>  
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/rugby.png">
+            <div class="layer">
+                <ul>
+                    <li style="font-size: 25px;padding-bottom:10px;">RUGBY (H&F)</li>
+                    <li>7 joueur(se)s + 2 remplaçant(e)s</li>
+                    <li>Terrain de rugby (campus)</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/relais.png">
+            <div class="layer">
+                <ul>
+                    <li style="font-size: 25px;padding-bottom:10px;">RELAIS 4x100m (mixte)</li>
+                    <li>4 joueurs</li>
+                    <li>Terrain de foot (campus)</li>
+                    <li>Min 1 fille</li>
+                </ul> 
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/basketball.png">
+            <div class="layer">
+                <ul>
+                    <li style="font-size: 25px;padding-bottom:10px;">BASKETBALL (mixte)</li>
+                    <li>5 joueurs +2 remplaçant(e)s</li>
+                    <li>Petit gymnase (campus)</li>
+                    <li>min. 1 fille</li>
+                    
+            </div>
+        </div>
+    </div>
+
+    
+
+</section>
+<section class="transition"> <p></p></section>
+
+
+<!-----La Soirée ----->
+
+<section class="soiree" id="id_soiree" >
+    <h1>La soirée</h1>
+    <p>Une soirée est prévue durant la nuit du 20 au 21 novembre. Tous les participants y seront conviés en plus d’un certain nombre d’élève d’IMT Atlantique. En plus de la piste de danse, il y aura aussi un bar vendant des boissons alcoolisées ou non ne dépassant pas 18% d’alcool. Pour acheter des boissons, il faudra d’abord acheter des tickets au niveau d’un autre stand un peu plus loin.
+         Chaque participant à la soirée sera limité à 4 verres d’alcool maximum.</p>
+</section>
+
+<section class="transition"> <p></p></section>
+
+<!-----Logement----->
+
+<section class="logement" id="id_logement">
+    <h1>Les logements et les repas</h1>
+    <p>Des salles de cours seront mises à dispositions des écoles afin de pouvoir y passer la nuit. Il vous est donc très conseillé de demander à vos participants d’amener leurs propres affaires pour dormir notamment et surtout une couverture/ sac de couchage, un oreiller ainsi qu'un matelas/tapis pour dormir.
+         Un agent de sécurité sera de garde durant toute la nuit. <br>
+        <br>En ce qui concerne les repas, ils sont aussi compris dans le prix de l’inscription. La liste des repas est :
+        </p>
+        <ul>
+            <li>Samedi : petit-déjeuner de 8h à 10h, déjeuner de 11h45 à 13h15 et le souper de 18h45h à 20h15h</li>
+            <li>Dimanche : petit-déjeuner à 9h, déjeuner de 11h45 à 13h15</li>
+        </ul>
+        <p> <br> Pour les sports hors campus, un panier repas sera distribué à chaque participant.</p>
+</section>
+
+
+<section class="transition"> <p></p></section>
+
+
+<!-----Contact----->
+
+<section class="contact">
+    <h1>Des Questions, un Renseignement ? </h1>
+    <a href="contact.html" class="btn">Contactez nous</a>
+</section>
+
+<section class="transition"> <p></p></section>
+
+
+<!-----Partenaires----->
+<section class="partenaires" id = "id_partenaire">
+   
+    
+    <div class="marquee">
+        <ul class="marquee-content">
+            <li>
+                <figure>
+                    <img src="images/logo_pumpkin.png" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Logo-Ornikar-Wiki.png" alt="visuel dynamique 1">
+                </figure>
+            </li>
+            
+            <li>
+                <figure>
+                    <img src="images/finistere2point9_byCA_x600.png" alt"">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/orness.png" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/logo_pumpkin.png" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Logo-Ornikar-Wiki.png" alt="visuel dynamique 1">
+                </figure>
+            </li>
+            
+            <li>
+                <figure>
+                    <img src="images/finistere2point9_byCA_x600.png" alt"">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/orness.png" alt="">
+                </figure>
+            </li>
+            
+        </ul>
+    </div>
+       
+</section>
+
+
+
+<!-----Bas de page-----
+<section class="bottom_page">
+
+</section>
+> 
+
+
+
+<!-----JavaScript for Menu----->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        
+        
+        
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+<script src="app.js"></script>
+</body>
+</html>
