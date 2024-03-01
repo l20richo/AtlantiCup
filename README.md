@@ -12,4 +12,3 @@ To use the website, simply follow these steps:
 
 That's it! The website should now be displayed in your browser.
 
-ÒÒ
